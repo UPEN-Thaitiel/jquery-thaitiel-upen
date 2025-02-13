@@ -45,7 +45,7 @@ This repo will be used for web development jQuery in class demo and exercise
 - Inside nextSequence(), increase the level by 1 every time nextSequence() is called.
 - Inside nextSequence(), update the h1 with this change in the value of level.
 
-**7. Start the game:**
+**7. Check User's Answer Against the Game sequence:**
 - At this point, it might be worth reviewing how the Simon game works.
 - Create a new function called `checkAnswer()`, it should take one input with the name currentLevel
 - Call `checkAnswer()` after a user has clicked and chosen their answer, passing in the index of the last answer in the user's sequence e.g. If the user has pressed red, green, red, yellow, the index of the last answer is 3.
@@ -55,12 +55,12 @@ This repo will be used for web development jQuery in class demo and exercise
 - Once nextSequence() is triggered, reset the userClickedPattern to an empty array ready for the next level.
 - **Now you should be able to play the game.**
 
-**9. Start the game:**
+**8. Game Over:**
 - In the sounds folder, there is a sound called wrong.mp3, play this sound if the user got one of the answers wrong.
 - In the `styles.css` file, there is a class called `"game-over"`, apply this class to the body of the website when the user gets one of the answers wrong and then remove it after 200 milliseconds.
 - Change the h1 title to say "Game Over, Press Any Key to Restart" if the user got the answer wrong.
 
-**10. Start the game:**
+**9. Restart the game:**
 - Create a new function called startOver().
 - Call startOver() if the user gets the sequence wrong.milliseconds.
 - Inside this function, you'll need to reset the values of level, gamePattern and started variables. 
